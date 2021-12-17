@@ -1,6 +1,6 @@
 //const allCenters = document.querySelector(".all_centers_table")
 //const chosenCenters = document.querySelector(".chosen_centers_table")
-
+console.log("Cloudfare test")
 
 const allCenters = document.querySelector(".all_centers_cards")
 const chosenCenters = document.querySelector(".chosen_centers_cards")
