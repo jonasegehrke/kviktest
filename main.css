@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 ,h4, h5, p{
+    color: white;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.centers_main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.middle_line{
+    width: 5px;
+    height: 5141px;
+    background-color: rgb(255, 255, 255);
+}
+
+.refresh_btn{
+    float: center;
+    margin-bottom: 10px;
+}
+
+.sorted_headline{
+    margin-bottom: 20px;
+}
+
+.center_card{
+    background: rgb(120, 89, 161);
+    margin: 30px;
+    padding: 25px;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: space-between;
+}
+
+
+.center_id{
+    display: none;
+}
+
+.center_queue_icon{
+    float: right;
+}
+
+.center_discription, .center_address{
+    width: 100%;
+}
+
+.mobile_swap_btn{
+    display: none;
+    position: fixed;
+    top: 50vh;
+    right: 0;
+    background: transparent;
+    border: none;
+    z-index: 2;
+}
+
+.mobile_swap_icon{
+    font-size: 45px;
+    color: white;
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+}
+
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+    .centers_main{
+        display: block;
+    }
+    .container{
+        display: block;
+    }
+    .center_queue_icon{
+        display: none;
+    }
+    .center_card{
+        position: relative;
+    }
+    .track_btn{
+        width: 100%;
+    }
+
+    .middle_line{
+        display: none;
+    }
+
+
+    .container{
+        transition: left .5s ease-in-out;
+    }
+
+    
+    
+
+    .chosen_centers_container.open{
+        display: block;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        visibility: visible;
+    }
+
+    .mobile_swap_btn.right{
+        left: 0px;
+    }
+
+    .chosen_centers_container{
+        overflow: hidden;
+        visibility: hidden;
+        position: absolute;
+        width: 0px;
+        top: 0;
+        left: 90vw;
+    }
+
+    .all_centers_container.open{
+        
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .all_centers_container{ 
+        position: absolute;
+        top: 0;
+        left: -100vw;
+    }
+    
+
+    .mobile_swap_btn{
+        display: block;
+    }
+
+    
+}
